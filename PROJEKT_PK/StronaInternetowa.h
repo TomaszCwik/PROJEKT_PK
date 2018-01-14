@@ -1,5 +1,5 @@
 #pragma once
-class StronaInternetowa
+class StronaInternetowa : public Utwor
 {
 public:
 	StronaInternetowa();

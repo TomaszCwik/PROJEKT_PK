@@ -1,5 +1,5 @@
 #pragma once
-class czasopismo
+class czasopismo : public Utwor
 {
 public:
 	czasopismo();

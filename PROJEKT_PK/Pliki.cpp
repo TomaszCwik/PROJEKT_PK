@@ -1,9 +1,5 @@
 #include "stdafx.h"
-#include <fstream> //import biblioteki fstream
-#include <stdio.h> //import biblioteki stdio.h
-#include <iostream>
-#include <iostream>
-#include <string>
+
 using namespace std;
 void ZapisDoPliku(int IloscWierszy,string ZawartoscPaczki[],string NazwaPliku)
 {
@@ -24,22 +20,7 @@ void ZapisDoPliku(int IloscWierszy,string ZawartoscPaczki[],string NazwaPliku)
 	plik.close();
 
 }
-void OdczytZPlikuPoLinii()
-{
-	ifstream odczyt("Wej.txt");
 
-	if (odczyt.is_open())
-	{
-		char znak;
-		while (odczyt >> znak) //dopóki jest co czytaæ
-		{
-			cout << znak; //wypisz to co wczyta³es z pliku
-						  //lub wykonaj inn¹ operacjê
-		}
-	}
-	else
-		cout << "Nie uda³o siê otworzyæ pliku";
-	} 
 void  OdczytZPlikuPoWierszu()
 {
 	int nr_lini = 1;
@@ -53,30 +34,33 @@ void  OdczytZPlikuPoWierszu()
 	  }
 	  while (getline(plik, linia))
 	  {
-		  SprawdzCzymJest(linia[0],linia);
+		  SprawdzCzymJest(linia);
 		  nr_lini++;
 	  }
 }
 
-void SprawdzCzymJest(char litera,string linia)
+void SprawdzCzymJest(string linia)
 {
+	Utwor *wsk;
+	if (linia[0] == 'K')
+	{
+//		Ksiazka Cz;
+//		wsk = &Cz;
 
-	if (litera == 'K')
-	{
-		cout << "K" << endl;
-
+		cout << linia[0] << endl;
+		
 	}
-	else if (litera == 'C')
+	else if (linia[0] == 'C')
 	{
-		cout << "C" << endl;
+		cout << linia[0] << endl;
 	}
-	else if (litera == 'I')
+	else if (linia[0] == 'I')
 	{
-		cout << "I" << endl;
+		cout << linia[0] << endl;
 	}
-	else if (litera =='R')
+	else if (linia[0] =='R')
 	{
-		cout << "R" << endl;
+		cout << linia[0] << endl;
 	}
 	else
 	{

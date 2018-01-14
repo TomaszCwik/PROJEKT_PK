@@ -1,8 +1,7 @@
 #pragma once
-class Ksiazka
+class Ksiazka : public Utwor
 {
 public:
-	virtual int rok()=0;
 
 	Ksiazka();
 	~Ksiazka();

@@ -1,9 +1,7 @@
 #pragma once
 #include "stdafx.h"
-#include <string>
 #include <iostream>
 using namespace std;
-void ZapisDoPliku();
-void  OdczytZPlikuPoLinii();
+void ZapisDoPliku(int IloscWierszy, string ZawartoscPaczki[], string NazwaPliku);
 void  OdczytZPlikuPoWierszu();
-void SprawdzCzymJest (char litera,string linia);
+void SprawdzCzymJest (string linia);

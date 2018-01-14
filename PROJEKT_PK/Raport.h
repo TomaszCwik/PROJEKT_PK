@@ -1,5 +1,5 @@
 #pragma once
-class Raport
+class Raport : public Utwor
 {
 public:
 	Raport();
