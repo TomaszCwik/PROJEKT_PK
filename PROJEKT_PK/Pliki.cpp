@@ -44,11 +44,7 @@ void SprawdzCzymJest(string linia)
 	Utwor *wsk;
 	if (linia[0] == 'K')
 	{
-//		Ksiazka Cz;
-//		wsk = &Cz;
-
-		cout << linia[0] << endl;
-		
+//
 	}
 	else if (linia[0] == 'C')
 	{

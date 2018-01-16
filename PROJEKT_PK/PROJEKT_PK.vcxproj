@@ -152,6 +152,7 @@
     <ClInclude Include="StronaInternetowa.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Utwor.h" />
+    <ClInclude Include="ZarzadzanieUtworami.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="czasopismo.cpp" />
@@ -168,6 +169,7 @@
     </ClCompile>
     <ClCompile Include="StronaInternetowa.cpp" />
     <ClCompile Include="Utwor.cpp" />
+    <ClCompile Include="ZarzadzanieUtworami.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
